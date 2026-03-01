@@ -1,0 +1,20 @@
+# FastAPI
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0
+sse-starlette>=2.0.0
+python-multipart>=0.0.18
+
+# Database
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+
+# Core RAG dependencies (same as existing)
+anthropic>=0.75.0
+openai>=2.14.0
+pypdfium2>=4.30.0
+python-docx>=1.2.0
+python-pptx>=1.0.2
+Pillow>=11.0.0
+pydantic>=2.12.0
+pydantic-settings>=2.7.0
+python-dotenv>=1.0.0
