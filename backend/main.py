@@ -35,9 +35,9 @@ async def lifespan(app: FastAPI):
 # ---------------------------------------------------------------------------
 
 app = FastAPI(
-    title="PageIndex RAG Backend",
-    description="Hierarchical document RAG with OpenAI-compatible API",
-    version="1.0.0",
+    title="Vectorless RAG Backend",
+    description="Hierarchical tree-based document RAG with OpenAI-compatible API",
+    version="1.1.0",
     lifespan=lifespan,
 )
 
@@ -109,4 +109,4 @@ async def health():
 @app.get("/")
 async def root():
     """Root endpoint returning service metadata."""
-    return {"name": "PageIndex RAG Backend", "version": "1.0.0"}
+    return {"name": "Vectorless RAG Backend", "version": "1.1.0"}
