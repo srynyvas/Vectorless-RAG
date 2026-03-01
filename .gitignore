@@ -34,3 +34,6 @@ Thumbs.db
 # Docker volumes
 postgres_data/
 open_webui_data/
+
+# MkDocs build output
+site/

@@ -1,0 +1,85 @@
+site_name: Vectorless RAG
+site_description: A Vectorless Retrieval-Augmented Generation system using hierarchical tree indexing and LLM reasoning
+site_url: https://srynyvas.github.io/Vectorless-RAG/
+repo_url: https://github.com/srynyvas/Vectorless-RAG
+repo_name: srynyvas/Vectorless-RAG
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+nav:
+  - Home: index.md
+  - The Intuition:
+    - Why Vectorless?: intuition.md
+  - Architecture:
+    - System Overview: architecture.md
+    - RAG Pipeline Deep Dive: pipeline.md
+  - Features: features.md
+  - Getting Started:
+    - Quick Start: getting-started.md
+    - Configuration: configuration.md
+    - Deployment: deployment.md
+  - API Reference: api-reference.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.mark
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/srynyvas/Vectorless-RAG
